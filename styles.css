@@ -140,6 +140,45 @@ main .portfolio .projects {
     -o-transition: .5s;
     transition: .5s; }
 
+main .testimontals .quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  main .testimontals .quotes .quote {
+    width: 50px; }
+  main .testimontals .quotes .left {
+    height: 10px;
+    width: 10px;
+    border: 2px solid black;
+    margin: auto 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: none;
+    border-right: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    cursor: pointer; }
+    main .testimontals .quotes .left:hover {
+      border-color: #7332E2; }
+  main .testimontals .quotes .right {
+    height: 10px;
+    width: 10px;
+    border: 2px solid black;
+    margin: auto 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-bottom: none;
+    border-left: none;
+    cursor: pointer; }
+    main .testimontals .quotes .right:hover {
+      border-color: #7332E2; }
+
 footer {
   background: #7332E2;
   color: #fff; }

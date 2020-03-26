@@ -5,6 +5,7 @@ html
     meta(charset="utf-8")
     meta(name="author" content="Jakub Jaguś")
     link(rel="stylesheet" href="styles.css")
+    script(src="script.js")
   body
     nav
       .container
@@ -14,7 +15,7 @@ html
           span Let's talk
     header
       h1 Junior Front-end Developer
-      p Lorem ipsum lorem ipsum
+      p Jakub Jaguś
       .avatar
         img#avatar(src="img/avatar.svg")
       .webdev
@@ -22,15 +23,14 @@ html
     main
       .intro
         h2 I’m Jacob. Let me introduce myself.
-        h3(style="margin-top: -20px; font-weight: 400") Let me introduce myself
         p Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
       .skills
         .skill
           h3 Social Media
           img(src="img/undraw_socialmedia.svg")
           p I value simple content structure, clean design patterns, and thoughtful interactions.
-          span Things I enjoy designing
-          p UX, UI, Web, Mobile, Apps, Logos
+          span The best account
+          p @elmundodetapas on Instagram
           span Social media Tools
           p 1
           p 2
@@ -95,9 +95,19 @@ html
               p Website for spanish restaurant and running social media.
               a(href="https://tapas.pl" target="_blank")
                 .btn Visit webiste
-      .companies
+      .testimontals
         h2 Testimontals
         p Who do others say about me?
+        .quotes
+          .left(onclick="previous()")
+          .quote
+            p#q1 1
+          .quote
+            p#q2 2
+          .quote
+            p#q3 3
+          .right(onclick="next()")
+      
       .hero
       footer
         .logo
