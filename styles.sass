@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Questrial&display=swap')
+
+body
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  background: #fff
+  text-align: center
+  p, span
+    font-family: 'Montserrat', sans-serif
+  h1, h2, h3
+    font-family: 'Questrial', sans-serif
+  h1
+    font-size: 45px
+  h2
+    font-size: 35px
+  h3
+    font-size: 25px
+nav
+  color: #7332E2
+  .container
+    display: flex
+    justify-content: space-around
+    margin-top: 20px
+  .logo
+    font-size: 25px
+    font-weight: bold
+  .btn
+    font-size: 20px
+    border: 2px solid #7332E2
+    padding: 10px 15px
+    border-radius: 50px
+    transition: .3s
+    &:hover
+      color: #fff
+      cursor: pointer
+      background: #7332E2
+header
+  height: 91vh
+  text-align: center
+  background: #fff
+  p
+    margin-top: -10px
+  .avatar
+    margin-top: 5vh
+    img
+      width: 225px
+  .webdev
+    margin-top: 25vh
+    img
+      width: 450px
+
+main
+  .intro
+    background: #7332E2
+    padding-top: 5vh
+    padding-left: 25%
+    padding-right: 25%
+    padding-bottom: 20vh
+    color: #fff
+  .skills
+    display: flex
+    width: 60vw
+    padding-top: 50px
+    padding-bottom: 50px
+    border-radius: 15px
+    background: #fff
+    margin: -7vw auto 10vh auto
+    box-shadow: 0 0 10px grey
+    .skill
+      margin: 0 auto
+      width: calc(15vw)
+      img
+        margin: 30px auto
+        height: 150px
+      span
+        color: #7332E2
+        font-weight: 500
+  .portfolio
+    .projects
+      margin-top: 50px
+      display: flex
+      justify-content: center
+      .box
+        margin: auto 25px
+        width: 350px
+        height: 300px
+        border-radius: 30px
+        color: #fff
+        box-shadow: 0 0 10px grey
+        &:hover
+          background: #7332E2 !important
+        .vanished
+          opacity: 0
+          transition: .3s
+          margin-top: 35%
+          p
+            margin: auto 50px
+          a
+            color: white
+            .btn
+              border: 2px solid #fff
+              display: inline-block
+              font-family: 'Montserrat', sans-serif
+              font-weight: bold
+              padding: 10px 20px
+              border-radius: 50px
+              margin-top: 20px
+              cursor: pointer
+              transition: .3s
+              &:hover
+                background: #fff
+                color: #7332E2
+                border-color: #fff
+        &:hover > .vanished
+          opacity: 1
+      #tapas
+        background: url('img/mockups/tapas.jpg')
+        background-size: cover
+        transition: .5s
+
+
+
+
+
+
+  .companies
+  .hero
+footer
+  background: #7332E2
+  color: #fff
+
+  .tools
+    img
+      height: 75px
