@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Questrial&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Questrial&display=swap')
+
+@mixin portfilioBox
+  background-size: cover
+  transition: .5s
 
 body
   margin: 0
@@ -8,6 +12,8 @@ body
   text-align: center
   p, span
     font-family: 'Montserrat', sans-serif
+    letter-spacing: .5px
+    line-height: 1.3
   h1, h2, h3
     font-family: 'Questrial', sans-serif
   h1
@@ -58,6 +64,8 @@ main
     padding-right: 25%
     padding-bottom: 20vh
     color: #fff
+    p
+      font-weight: 300
   .skills
     display: flex
     width: 60vw
@@ -93,7 +101,7 @@ main
         .vanished
           opacity: 0
           transition: .3s
-          margin-top: 35%
+          margin-top: 30%
           p
             margin: auto 50px
           a
@@ -116,8 +124,23 @@ main
           opacity: 1
       #tapas
         background: url('img/mockups/tapas.jpg')
-        background-size: cover
-        transition: .5s
+        @include portfilioBox
+      #mistrzowie
+        background: url('img/mockups/mistrzowie.jpg')
+        @include portfilioBox
+      #strefakomfortu
+        background: url('img/mockups/sk.jpg')
+        @include portfilioBox
+      #lekarz
+        background: url('img/mockups/lekarz.png')
+        @include portfilioBox
+      #bicomedika
+        background: url('img/mockups/bicomedika.jpg')
+        @include portfilioBox
+      #electrovise
+        background: url('img/mockups/electrovise.jpg')
+        @include portfilioBox
+
 
   .testimontals
     .quotes
