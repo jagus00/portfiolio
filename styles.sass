@@ -152,22 +152,22 @@ main
         &:hover > .vanished
           opacity: 1
       #tapas
-        background: url('img/grzebalski.jpg')
+        background: url('img/tapas.jpg')
         @include portfilioBox
-      #mistrzowie
-        background: url('img/strefa-komfortu.jpg')
-        @include portfilioBox
-      #strefakomfortu
-        background: url('img/mockups/sk.jpg')
-        @include portfilioBox
-      #lekarz
-        background: url('img/mockups/lekarz.png')
+      #strefaKomfortu
+        background: url('img/strefaKomfortu.jpg')
         @include portfilioBox
       #bicomedika
-        background: url('img/mockups/bicomedika.jpg')
+        background: url('img/bicomedika.jpg')
+        @include portfilioBox
+      #grzebalski
+        background: url('img/grzebalski.png')
+        @include portfilioBox
+      #progres
+        background: url('img/progres.jpg')
         @include portfilioBox
       #electrovise
-        background: url('img/mockups/electrovise.jpg')
+        background: url('img/electrovise.jpg')
         @include portfilioBox
 
 
@@ -206,9 +206,7 @@ main
           border-color: #7332E2
   .hero
 footer
-  background: #7332E2
+  @include gradientBg
   color: #fff
-
-  .tools
-    img
-      height: 75px
+  margin-top: 100px
+  padding: 25px 0

@@ -210,37 +210,37 @@ main .portfolio .projects {
     main .portfolio .projects .box:hover > .vanished {
       opacity: 1; }
   main .portfolio .projects #tapas {
-    background: url("img/grzebalski.jpg");
+    background: url("img/tapas.jpg");
     background-size: cover;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
-  main .portfolio .projects #mistrzowie {
-    background: url("img/strefa-komfortu.jpg");
-    background-size: cover;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
-  main .portfolio .projects #strefakomfortu {
-    background: url("img/mockups/sk.jpg");
-    background-size: cover;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
-  main .portfolio .projects #lekarz {
-    background: url("img/mockups/lekarz.png");
+  main .portfolio .projects #strefaKomfortu {
+    background: url("img/strefaKomfortu.jpg");
     background-size: cover;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
   main .portfolio .projects #bicomedika {
-    background: url("img/mockups/bicomedika.jpg");
+    background: url("img/bicomedika.jpg");
+    background-size: cover;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+  main .portfolio .projects #grzebalski {
+    background: url("img/grzebalski.png");
+    background-size: cover;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+  main .portfolio .projects #progres {
+    background: url("img/progres.jpg");
     background-size: cover;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
   main .portfolio .projects #electrovise {
-    background: url("img/mockups/electrovise.jpg");
+    background: url("img/electrovise.jpg");
     background-size: cover;
     -webkit-transition: .5s;
     -o-transition: .5s;
@@ -291,7 +291,10 @@ main .testimontals .quotes {
       border-color: #7332E2; }
 
 footer {
-  background: #7332E2;
-  color: #fff; }
-  footer .tools img {
-    height: 75px; }
+  background: -webkit-gradient(linear, left top, right top, from(#7a53a1), to(#f05f52));
+  background: -webkit-linear-gradient(left, #7a53a1 0%, #f05f52 100%);
+  background: -o-linear-gradient(left, #7a53a1 0%, #f05f52 100%);
+  background: linear-gradient(left, #7a53a1 0%, #f05f52 100%);
+  color: #fff;
+  margin-top: 100px;
+  padding: 25px 0; }
