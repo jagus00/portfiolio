@@ -7,13 +7,13 @@
     <meta charset="utf-8">
     <meta name="author" content="#">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="script.js"></script>
   </head>
   <body>
     <nav>
       <div class="container">
-        <div class="logo"> <img src="img/logo.png"></div><span></span>
+        <div class="logo"> <img src="../img/logo.png"></div><span></span>
         <div class="buttons">
           <div class="navPortfolio"><span>portfolio</span></div>
           <div class="navBtn"><span>contact</span></div>
@@ -23,16 +23,50 @@
     <header>
       <h1>Graphic designer & Marketing specialist</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <!--.arrow-->
     </header>
     <main>
-      <div class="intro">
+      <section id="introduction">
         <h2>Hello!</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus. Vivamus condimentum interdum diam, sed efficitur nisl. Proin vitae quam felis. Pellentesque vestibulum in metus vel posuere. </p>
         <p>Nunc ante metus, sodales nec mattis ut, sodales vel odio. Mauris augue leo, porta vitae vestibulum vitae, porttitor nec mi. Donec accumsan risus vitae eros vulputate tempor vel vitae nunc. Nam ut nisl eros.</p>
-      </div>
-      <div class="portfolio"><img src="img/paint.png">
-        <h2>Design</h2>
-        <p>Here are a few design projects I've worked on recently. Want to see more? Email me.</p>
+      </section>
+      <section id="services">
+        <h2>What can I do?</h2>
+        <p class="description">Services</p>
+        <div class="skills">
+          <div class="skill"><img src="img/services/website.svg">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus.</p>
+          </div>
+          <div class="skill"><img src="img/services/refresh.svg">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus.</p>
+          </div>
+          <div class="skill"><img src="img/services/graphicDesign.svg">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus.</p>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="skill"><img src="img/services/eCommerce.svg">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus.</p>
+          </div>
+          <div class="skill"><img src="img/services/operation.svg">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus.</p>
+          </div>
+          <div class="skill"><img src="img/services/ad.svg">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus.</p>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <!--img(src="../img/main/marketing.svg").infoGraphic-->
+        <h2>Well done projects</h2>
+        <p class="description">Here are a few design projects I've worked on recently. Want to see more? Email me.</p>
         <div class="projects">
           <div class="box" id="tapas">
             <div class="vanished">
@@ -40,7 +74,7 @@
                 <div class="btn">Visit webiste</div></a>
             </div>
           </div>
-          <div class="box" id="strefaKomfortu">
+          <div class="box" id="mistrzowieZarabiania">
             <div class="vanished">
               <p>Website for spanish restaurant and running social media.</p><a href="https://mistrzowie-zarabiania.pl" target="_blank">
                 <div class="btn">Visit webiste</div></a>
@@ -48,13 +82,13 @@
           </div>
           <div class="box" id="bicomedika">
             <div class="vanished">
-              <p>Website for spanish restaurant and running social media.</p><a href="https://strefa-komfortu.com.pl" target="_blank">
+              <p>Website for spanish restaurant and running social media.</p><a href="https://bicomedika.pl" target="_blank">
                 <div class="btn">Visit webiste</div></a>
             </div>
           </div>
         </div>
         <div class="projects">
-          <div class="box" id="grzebalski">
+          <div class="box" id="estatePrint">
             <div class="vanished">
               <p>Website for spanish restaurant and running social media.</p><a href="https://lekarzgrzebalski.pl" target="_blank">
                 <div class="btn">Visit webiste</div></a>
@@ -66,78 +100,66 @@
                 <div class="btn">Visit webiste</div></a>
             </div>
           </div>
-          <div class="box" id="electrovise">
+          <div class="box" id="cybina13">
             <div class="vanished">
               <p>Website for spanish restaurant and running social media.</p><a href="https://electrovise.pl" target="_blank">
                 <div class="btn">Visit webiste</div></a>
             </div>
           </div>
         </div>
-        <div class="btn">
-          <div class="btnMore"><span>more</span></div>
-        </div><img src="img/marketing.svg">
-        <h2>Marketing & Social Media</h2>
-        <p>Here are a few design projects I've worked on recently. Want to see more? Email me.</p>
-        <div class="projects">
-          <div class="box" id="tapas">
+        <div class="projects" id="hiddenDesign">
+          <div class="box" id="goodGame">
             <div class="vanished">
               <p>Website for spanish restaurant and running social media.</p><a href="https://tapas.pl" target="_blank">
                 <div class="btn">Visit webiste</div></a>
             </div>
           </div>
-          <div class="box" id="strefaKomfortu">
-            <div class="vanished">
-              <p>Website for spanish restaurant and running social media.</p><a href="https://mistrzowie-zarabiania.pl" target="_blank">
-                <div class="btn">Visit webiste</div></a>
-            </div>
-          </div>
-          <div class="box" id="bicomedika">
-            <div class="vanished">
-              <p>Website for spanish restaurant and running social media.</p><a href="https://strefa-komfortu.com.pl" target="_blank">
-                <div class="btn">Visit webiste</div></a>
-            </div>
-          </div>
-        </div>
-        <div class="projects">
-          <div class="box" id="grzebalski">
+          <div class="box" id="grzebalskiLekarz">
             <div class="vanished">
               <p>Website for spanish restaurant and running social media.</p><a href="https://lekarzgrzebalski.pl" target="_blank">
                 <div class="btn">Visit webiste</div></a>
             </div>
           </div>
-          <div class="box" id="progres">
+          <div class="box" id="kinesis">
             <div class="vanished">
-              <p>Website for spanish restaurant and running social media.</p><a href="https://bicomedika.pl" target="_blank">
-                <div class="btn">Visit webiste</div></a>
-            </div>
-          </div>
-          <div class="box" id="electrovise">
-            <div class="vanished">
-              <p>Website for spanish restaurant and running social media.</p><a href="https://electrovise.pl" target="_blank">
-                <div class="btn">Visit webiste</div></a>
+              <p>Website for spanish restaurant and running social media.</p><a href="https://strefa-komfortu.com.pl" target="_blank">
+                <div class="btn">Visit webiste  </div></a>
             </div>
           </div>
         </div>
         <div class="btn">
-          <div class="btnMore"><span>more</span></div>
+          <div class="btnMore" id="moreDesign" onClick="showMoreDesign()"><span>show more</span></div>
         </div>
-      </div>
-      <div class="testimontals">
-        <h2>Lorem ipsum</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <div class="quotes">
-          <div class="left" onclick="previous()"></div>
-          <div class="quote">
-            <p id="q1">1</p>
+      </section>
+      <section id="website"><img class="infoGraphic" src="img/services/website.svg">
+        <h2>Website design</h2>
+        <p class="description">An unique design for you</p>
+        <div class="steps">
+          <h2>1. Step one</h2>
+          <p>Idividual graphic</p>
+          <div class="step">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus. Vivamus condimentum interdum diam, sed efficitur nisl. Proin vitae quam felis. Pellentesque vestibulum in metus vel posuere. Nunc ante metus, sodales nec mattis ut, sodales vel odio. Mauris augue leo, porta vitae vestibulum vitae, porttitor nec mi. Donec accumsan risus vitae eros vulputate tempor vel vitae nunc. Nam ut nisl eros.</p><img src="img/services/project.svg">
           </div>
-          <div class="quote">
-            <p id="q2">2</p>
-          </div>
-          <div class="quote">
-            <p id="q3">3</p>
-          </div>
-          <div class="right" onclick="next()"></div>
+          <h2>2. Step two</h2>
+          <p>Graphic design acceptance</p>
         </div>
+        <div class="steps">
+          <div class="step"><img src="img/services/project.svg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus. Vivamus condimentum interdum diam, sed efficitur nisl. Proin vitae quam felis. Pellentesque vestibulum in metus vel posuere. Nunc ante metus, sodales nec mattis ut, sodales vel odio. Mauris augue leo, porta vitae vestibulum vitae, porttitor nec mi. Donec accumsan risus vitae eros vulputate tempor vel vitae nunc. Nam ut nisl eros.</p>
+          </div>
+          <h2>3. Third step</h2>
+          <p>Providing the client with the website</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus. Vivamus condimentum interdum diam, sed efficitur nisl. Proin vitae quam felis. Pellentesque vestibulum in metus vel posuere. Nunc ante metus, sodales nec mattis ut, sodales vel odio. Mauris augue leo, porta vitae vestibulum vitae, porttitor nec mi. Donec accumsan risus vitae eros vulputate tempor vel vitae nunc. Nam ut nisl eros.</p><img src="img/services/project.svg">
+          </div>
+        </div>
+      </section>
+      <div class="hero">
+        <h3>Start project</h3>
+        <p>Are you interested in working together? </p>
+        <div class="btn">Elo mordo</div>
       </div>
       <footer>
         <p>&copy Filip Bauwens - Graphic Desginer & Marketing Specialist</p>

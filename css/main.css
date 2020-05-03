@@ -99,6 +99,9 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -163,7 +166,7 @@ header {
     -webkit-animation: floatUp 2s infinite;
     animation: floatUp 2s infinite; }
 
-main #intro {
+main #introduction {
   background: -webkit-gradient(linear, left top, right top, from(#7a53a1), to(#f05f52));
   background: -webkit-linear-gradient(left, #7a53a1 0%, #f05f52 100%);
   background: -o-linear-gradient(left, #7a53a1 0%, #f05f52 100%);
@@ -173,10 +176,14 @@ main #intro {
   padding-right: 25%;
   padding-bottom: 7vh;
   color: #fff; }
-  main #intro p {
+  main #introduction h2 {
+    font-size: 74px;
+    font-weight: 300;
+    letter-spacing: 1px; }
+  main #introduction p {
     font-weight: 300; }
 
-main #skills h2, main #skills p, main #portfolio h2, main #portfolio p {
+main #services h2, main #services h3, main #services .description, main #portfolio h2, main #portfolio h3, main #portfolio .description, main #website h2, main #website h3, main #website .description {
   background: -webkit-gradient(linear, left top, right top, from(#7a53a1), to(#f05f52));
   background: -webkit-linear-gradient(left, #7a53a1 0%, #f05f52 100%);
   background: -o-linear-gradient(left, #7a53a1 0%, #f05f52 100%);
@@ -185,137 +192,179 @@ main #skills h2, main #skills p, main #portfolio h2, main #portfolio p {
   background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-main #portfolio img {
-  margin-top: 50px;
-  width: 150px; }
-
-main #portfolio .btn .btnMore {
-  background: -webkit-gradient(linear, left top, right top, from(#7a53a1), to(#f05f52));
-  background: -webkit-linear-gradient(left, #7a53a1 0%, #f05f52 100%);
-  background: -o-linear-gradient(left, #7a53a1 0%, #f05f52 100%);
-  background: linear-gradient(left, #7a53a1 0%, #f05f52 100%);
-  padding: 10px 20px;
-  border-radius: 50px;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-  cursor: pointer;
-  display: inline-block;
-  margin: 50px 0;
-  color: #fff;
+main #services .description, main #portfolio .description, main #website .description {
+  margin-top: -20px;
   font-size: 20px; }
-  main #portfolio .btn .btnMore:hover {
+
+main #services {
+  margin-top: 150px; }
+  main #services .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 50px 15% 0 15%; }
+    main #services .skills .skill {
+      margin: 0 50px;
+      color: black !important; }
+      main #services .skills .skill img {
+        height: 50px; }
+
+main #portfolio {
+  margin-top: 150px; }
+  main #portfolio img {
+    width: 150px; }
+  main #portfolio .btn .btnMore {
     background: -webkit-gradient(linear, left top, right top, from(#7a53a1), to(#f05f52));
     background: -webkit-linear-gradient(left, #7a53a1 0%, #f05f52 100%);
     background: -o-linear-gradient(left, #7a53a1 0%, #f05f52 100%);
     background: linear-gradient(left, #7a53a1 0%, #f05f52 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    padding: 10px 20px;
+    border-radius: 50px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+    display: inline-block;
+    margin: 50px 0;
+    color: #fff;
+    font-size: 20px; }
+    main #portfolio .btn .btnMore:hover {
+      background: -webkit-gradient(linear, left top, right top, from(#7a53a1), to(#f05f52));
+      background: -webkit-linear-gradient(left, #7a53a1 0%, #f05f52 100%);
+      background: -o-linear-gradient(left, #7a53a1 0%, #f05f52 100%);
+      background: linear-gradient(left, #7a53a1 0%, #f05f52 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; }
+  main #portfolio .projects {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    main #portfolio .projects .box {
+      margin: auto 25px;
+      width: 250px;
+      height: 250px;
+      border-radius: 30px;
+      -webkit-box-shadow: 0 0 10px grey;
+      box-shadow: 0 0 10px grey; }
+      main #portfolio .projects .box:hover {
+        background: #7332E2 !important; }
+      main #portfolio .projects .box .vanished {
+        opacity: 0;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        margin-top: 30%; }
+        main #portfolio .projects .box .vanished p {
+          margin: auto 50px;
+          color: #fff !important; }
+        main #portfolio .projects .box .vanished a {
+          color: white; }
+          main #portfolio .projects .box .vanished a .btn {
+            border: 2px solid #fff;
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 50px;
+            margin-top: 20px;
+            cursor: pointer;
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s; }
+            main #portfolio .projects .box .vanished a .btn:hover {
+              background: #fff;
+              color: #7332E2;
+              border-color: #fff; }
+      main #portfolio .projects .box:hover > .vanished {
+        opacity: 1; }
+    main #portfolio .projects #tapas {
+      background: url("../img/portfolio/tapas.jpg");
+      background-size: cover;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    main #portfolio .projects #mistrzowieZarabiania {
+      background: url("../img/portfolio/mistrzowieZarabiania.jpg");
+      background-size: cover;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    main #portfolio .projects #bicomedika {
+      background: url("../img/portfolio/bicomedika.jpg");
+      background-size: cover;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    main #portfolio .projects #estatePrint {
+      background: url("../img/portfolio/estatePrint.jpg");
+      background-size: cover;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    main #portfolio .projects #progres {
+      background: url("../img/portfolio/progres.jpg");
+      background-size: cover;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    main #portfolio .projects #cybina13 {
+      background: url("../img/portfolio/cybina13.jpg");
+      background-size: cover;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    main #portfolio .projects #goodGame {
+      background: url("../img/portfolio/goodGame.jpg");
+      background-size: cover;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    main #portfolio .projects #kinesis {
+      background: url("../img/portfolio/kinesis.jpg");
+      background-size: cover;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    main #portfolio .projects #grzebalskiLekarz {
+      background: url("../img/portfolio/grzebalskiLekarz.jpg");
+      background-size: cover;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+  main #portfolio #hiddenDesign {
+    display: none; }
 
-main #portfolio .projects {
-  margin-top: 50px;
+main #website img {
+  height: 50px; }
+
+main #website .steps .step {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
-  main #portfolio .projects .box {
-    margin: auto 25px;
-    width: 250px;
-    height: 250px;
-    border-radius: 30px;
-    -webkit-box-shadow: 0 0 10px grey;
-    box-shadow: 0 0 10px grey; }
-    main #portfolio .projects .box:hover {
-      background: #7332E2 !important; }
-    main #portfolio .projects .box .vanished {
-      opacity: 0;
-      -webkit-transition: .3s;
-      -o-transition: .3s;
-      transition: .3s;
-      margin-top: 30%; }
-      main #portfolio .projects .box .vanished p {
-        margin: auto 50px;
-        color: #fff !important; }
-      main #portfolio .projects .box .vanished a {
-        color: white; }
-        main #portfolio .projects .box .vanished a .btn {
-          border: 2px solid #fff;
-          display: inline-block;
-          font-family: 'Montserrat', sans-serif;
-          font-weight: bold;
-          padding: 10px 20px;
-          border-radius: 50px;
-          margin-top: 20px;
-          cursor: pointer;
-          -webkit-transition: .3s;
-          -o-transition: .3s;
-          transition: .3s; }
-          main #portfolio .projects .box .vanished a .btn:hover {
-            background: #fff;
-            color: #7332E2;
-            border-color: #fff; }
-    main #portfolio .projects .box:hover > .vanished {
-      opacity: 1; }
-  main #portfolio .projects #tapas {
-    background: url("../img/portfolio/tapas.jpg");
-    background-size: cover;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
-  main #portfolio .projects #mistrzowieZarabiania {
-    background: url("../img/portfolio/mistrzowieZarabiania.jpg");
-    background-size: cover;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
-  main #portfolio .projects #bicomedika {
-    background: url("../img/portfolio/bicomedika.jpg");
-    background-size: cover;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
-  main #portfolio .projects #estatePrint {
-    background: url("../img/portfolio/estatePrint.jpg");
-    background-size: cover;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
-  main #portfolio .projects #progres {
-    background: url("../img/portfolio/progres.jpg");
-    background-size: cover;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
-  main #portfolio .projects #cybina13 {
-    background: url("../img/portfolio/cybina13.jpg");
-    background-size: cover;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
-  main #portfolio .projects #goodGame {
-    background: url("../img/portfolio/goodGame.jpg");
-    background-size: cover;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
-  main #portfolio .projects #kinesis {
-    background: url("../img/portfolio/kinesis.jpg");
-    background-size: cover;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
-  main #portfolio .projects #grzebalskiLekarz {
-    background: url("../img/portfolio/grzebalskiLekarz.jpg");
-    background-size: cover;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
-
-main #portfolio #hiddenDesign {
-  display: none; }
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  main #website .steps .step img {
+    width: 250px; }
 
 main .hero {
   display: -webkit-box;

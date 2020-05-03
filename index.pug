@@ -7,13 +7,13 @@ html
     meta(charset="utf-8")
     meta(name="author" content="#")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet" href="styles.css")
+    link(rel="stylesheet" href="css/main.css")
     script(src="script.js")
   body
     nav
       .container
         .logo 
-          img(src="img/logo.png")
+          img(src="../img/logo.png")
         span
         .buttons
           .navPortfolio
@@ -23,22 +23,52 @@ html
     header
       h1 Graphic designer & Marketing specialist
       p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      //.arrow
     main
-      .intro
+      section#introduction
         h2 Hello!
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus. Vivamus condimentum interdum diam, sed efficitur nisl. Proin vitae quam felis. Pellentesque vestibulum in metus vel posuere. 
         p Nunc ante metus, sodales nec mattis ut, sodales vel odio. Mauris augue leo, porta vitae vestibulum vitae, porttitor nec mi. Donec accumsan risus vitae eros vulputate tempor vel vitae nunc. Nam ut nisl eros.
-      .portfolio
-        img(src="img/paint.png")
-        h2 Design
-        p Here are a few design projects I've worked on recently. Want to see more? Email me.
+      section#services
+        h2 What can I do?
+        p.description Services
+        .skills
+          .skill
+            img(src="img/services/website.svg")
+            h3 Lorem
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus.
+          .skill
+            img(src="img/services/refresh.svg")
+            h3 Lorem
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus.
+          .skill
+            img(src="img/services/graphicDesign.svg")
+            h3 Lorem
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus.
+        .skills
+          .skill
+            img(src="img/services/eCommerce.svg")
+            h3 Lorem
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus.
+          .skill
+            img(src="img/services/operation.svg")
+            h3 Lorem
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus.
+          .skill
+            img(src="img/services/ad.svg")
+            h3 Lorem
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus.
+      section#portfolio
+        //img(src="../img/main/marketing.svg").infoGraphic
+        h2 Well done projects
+        p.description Here are a few design projects I've worked on recently. Want to see more? Email me.
         .projects
           .box#tapas
             .vanished
               p Website for spanish restaurant and running social media.
               a(href="https://tapas.pl" target="_blank")
                 .btn Visit webiste
-          .box#strefaKomfortu
+          .box#mistrzowieZarabiania
             .vanished
               p Website for spanish restaurant and running social media.
               a(href="https://mistrzowie-zarabiania.pl" target="_blank")
@@ -46,10 +76,10 @@ html
           .box#bicomedika
             .vanished
               p Website for spanish restaurant and running social media.
-              a(href="https://strefa-komfortu.com.pl" target="_blank")
+              a(href="https://bicomedika.pl" target="_blank")
                 .btn Visit webiste
         .projects
-          .box#grzebalski
+          .box#estatePrint
             .vanished
               p Website for spanish restaurant and running social media.
               a(href="https://lekarzgrzebalski.pl" target="_blank")
@@ -59,64 +89,62 @@ html
               p Website for spanish restaurant and running social media.
               a(href="https://bicomedika.pl" target="_blank")
                 .btn Visit webiste
-          .box#electrovise
+          .box#cybina13
             .vanished
               p Website for spanish restaurant and running social media.
               a(href="https://electrovise.pl" target="_blank")
                 .btn Visit webiste
-        .btn
-          .btnMore
-            span more
-        img(src="img/marketing.svg")
-        h2 Marketing & Social Media
-        p Here are a few design projects I've worked on recently. Want to see more? Email me.
-        .projects
-          .box#tapas
+        .projects#hiddenDesign
+          .box#goodGame
             .vanished
               p Website for spanish restaurant and running social media.
               a(href="https://tapas.pl" target="_blank")
                 .btn Visit webiste
-          .box#strefaKomfortu
-            .vanished
-              p Website for spanish restaurant and running social media.
-              a(href="https://mistrzowie-zarabiania.pl" target="_blank")
-                .btn Visit webiste
-          .box#bicomedika
-            .vanished
-              p Website for spanish restaurant and running social media.
-              a(href="https://strefa-komfortu.com.pl" target="_blank")
-                .btn Visit webiste
-        .projects
-          .box#grzebalski
+          .box#grzebalskiLekarz
             .vanished
               p Website for spanish restaurant and running social media.
               a(href="https://lekarzgrzebalski.pl" target="_blank")
                 .btn Visit webiste
-          .box#progres
+          .box#kinesis
             .vanished
               p Website for spanish restaurant and running social media.
-              a(href="https://bicomedika.pl" target="_blank")
-                .btn Visit webiste
-          .box#electrovise
-            .vanished
-              p Website for spanish restaurant and running social media.
-              a(href="https://electrovise.pl" target="_blank")
-                .btn Visit webiste
+              a(href="https://strefa-komfortu.com.pl" target="_blank")
+                .btn Visit webiste  
         .btn
-          .btnMore
-            span more
-      .testimontals
-        h2 Lorem ipsum
-        p Lorem ipsum dolor sit amet.
-        .quotes
-          .left(onclick="previous()")
-          .quote
-            p#q1 1
-          .quote
-            p#q2 2
-          .quote
-            p#q3 3
-          .right(onclick="next()")
+          .btnMore#moreDesign(onClick = "showMoreDesign()")
+            span show more
+            
+      section#website
+        img.infoGraphic(src="img/services/website.svg")
+        h2 Website design
+        p.description An unique design for you
+        .steps
+          h2 1. Step one
+          p Idividual graphic
+          .step
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus. Vivamus condimentum interdum diam, sed efficitur nisl. Proin vitae quam felis. Pellentesque vestibulum in metus vel posuere. Nunc ante metus, sodales nec mattis ut, sodales vel odio. Mauris augue leo, porta vitae vestibulum vitae, porttitor nec mi. Donec accumsan risus vitae eros vulputate tempor vel vitae nunc. Nam ut nisl eros.
+            img(src="img/services/project.svg")
+          h2 2. Step two
+          p Graphic design acceptance
+        .steps
+          .step
+            img(src="img/services/project.svg")
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus. Vivamus condimentum interdum diam, sed efficitur nisl. Proin vitae quam felis. Pellentesque vestibulum in metus vel posuere. Nunc ante metus, sodales nec mattis ut, sodales vel odio. Mauris augue leo, porta vitae vestibulum vitae, porttitor nec mi. Donec accumsan risus vitae eros vulputate tempor vel vitae nunc. Nam ut nisl eros.
+          h2 3. Third step
+          p Providing the client with the website
+        .steps
+          .step
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla elementum enim, in congue tortor. Quisque accumsan nulla in lacus convallis tempus. Vivamus condimentum interdum diam, sed efficitur nisl. Proin vitae quam felis. Pellentesque vestibulum in metus vel posuere. Nunc ante metus, sodales nec mattis ut, sodales vel odio. Mauris augue leo, porta vitae vestibulum vitae, porttitor nec mi. Donec accumsan risus vitae eros vulputate tempor vel vitae nunc. Nam ut nisl eros.
+            img(src="img/services/project.svg")
+            
+          
+      
+      
+      .hero
+        h3 Start project
+        p Are you interested in working together? 
+        .btn Elo mordo
+
 
       footer
         p &copy Filip Bauwens - Graphic Desginer & Marketing Specialist

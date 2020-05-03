@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Warstwa_1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 24.7"
+	 style="enable-background:new 0 0 32 24.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#FFFFFF;}
+	.st2{fill:url(#SVGID_1_);}
+	.st3{fill:url(#SVGID_2_);}
+	.st4{fill:url(#SVGID_3_);}
+</style>
+<g transform="translate(0,-16)" class="st0">
+	<rect y="-2.3" class="st1" width="48" height="48"/>
+	<rect x="-47" y="-2.3" class="st1" width="48" height="48"/>
+	<rect x="-103" y="-2.3" class="st1" width="48" height="48"/>
+	<rect y="55.3" class="st1" width="48" height="48"/>
+	<rect x="-47" y="55.3" class="st1" width="48" height="48"/>
+	<rect x="-103" y="55.3" class="st1" width="48" height="48"/>
+	<rect y="115.3" class="st1" width="48" height="48"/>
+	<rect x="-47" y="115.3" class="st1" width="48" height="48"/>
+	<rect x="-103" y="115.3" class="st1" width="48" height="48"/>
+	<rect y="171.3" class="st1" width="48" height="48"/>
+	<rect x="-47" y="171.3" class="st1" width="48" height="48"/>
+	<rect x="-103" y="171.3" class="st1" width="48" height="48"/>
+	<rect y="229.3" class="st1" width="48" height="48"/>
+	<rect x="-47" y="229.3" class="st1" width="48" height="48"/>
+	<rect x="-103" y="229.3" class="st1" width="48" height="48"/>
+</g>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="5" y1="12.8095" x2="27" y2="12.8095">
+	<stop  offset="0" style="stop-color:#7A53A1"/>
+	<stop  offset="1" style="stop-color:#F06052"/>
+</linearGradient>
+<path class="st2" d="M16,1.8c-6.1,0-11,4.9-11,11s4.9,11,11,11s11-4.9,11-11S22.1,1.8,16,1.8z M20,9.5c0.5,0,0.7,0.5,0.4,0.9
+	L14.8,16c-0.2,0.2-0.5,0.2-0.7,0l-2.4-2.4c-0.5-0.5,0.2-1.2,0.7-0.7l2.1,2.1l5.3-5.3C19.7,9.5,19.9,9.5,20,9.5z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="90.5106" y1="38.7766" x2="326.4255" y2="38.7766">
+	<stop  offset="0" style="stop-color:#7A53A1"/>
+	<stop  offset="1" style="stop-color:#F06052"/>
+</linearGradient>
+<rect x="90.5" y="-79.2" class="st3" width="235.9" height="235.9"/>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-146" y1="33.1915" x2="-124" y2="33.1915">
+	<stop  offset="0" style="stop-color:#7A53A1"/>
+	<stop  offset="1" style="stop-color:#F06052"/>
+</linearGradient>
+<path class="st4" d="M-135,22.2c-6.1,0-11,4.9-11,11s4.9,11,11,11s11-4.9,11-11S-128.9,22.2-135,22.2z M-131,29.9
+	c0.5,0,0.7,0.5,0.4,0.9l-5.6,5.7c-0.2,0.2-0.5,0.2-0.7,0l-2.4-2.4c-0.5-0.5,0.2-1.2,0.7-0.7l2.1,2.1l5.3-5.3
+	C-131.3,29.9-131.1,29.9-131,29.9z"/>
+</svg>

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Questrial&display=swap')
+
+$backgroundGradient: linear-gradient(left, rgba(122,83,161,1) 0%, rgba(240,95,82,1) 100%)
+
+@mixin flexy
+  display: flex
+  justify-content: center
+  align-items: center
+
+@mixin colorGradient
+  background: linear-gradient(left, rgba(122,83,161,1) 0%, rgba(240,95,82,1) 100%)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+
+@mixin btnGradient
+  background: $backgroundGradient
+  padding: 10px 20px
+  border-radius: 50px
+  transition: .3s
+  cursor: pointer
+  &:hover
+    @include colorGradient
+
+@mixin portfilioBox
+  background-size: cover
+  transition: .5s
+
+@keyframes fadeInUp
+  from
+    opacity: 0
+    transform: translateY(50px)
+  to
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes fadeOutDown
+  from
+    opacity: 1
+    transform: translateY(0)
+  to
+    opacity: 0
+    transform: translateY(50px)
+
+@keyframes floatUp
+  0%
+    transform: translateY(0) rotate(45deg)
+  50%
+    transform: translateY(-20px) rotate(45deg)
+  100%
+    transform: translateY(0) rotate(45deg)
